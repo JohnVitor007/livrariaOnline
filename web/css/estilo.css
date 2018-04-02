@@ -1,0 +1,75 @@
+.cor_primaria{
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.sublinhado{
+    border-bottom: 1px solid #757575;
+}
+
+.cor_texto{
+    color: #757575;
+}
+
+.cor_link{
+    color: #2196F3;
+}
+
+.margin-top{
+    margin-top: 40px;
+}
+
+.card{
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.card:hover{
+    border: 1px solid #2196F3;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu{
+    margin-right: 20px;
+}
+
+.menu img{
+    margin-right: 20px;
+}
+
+.menu p{
+    margin: 0;
+}
+
+.menu .nome_usuario{
+    font-size: 18px;
+    padding-top: 2px;
+}
+
+
+.menu .opcao{
+    float: left;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+
+.livros_container{
+    margin-top: 30px;
+}
+
+.menu_lateral{
+    border-right: 1px solid #F5F5F5;
+    background-color: #FAFAFA;
+    padding-top: 20px;
+}
+
+.menu_lateral label{
+    font-size: 15px;
+    margin: 0;
+}
+
+.menu_lateral input[type=text]{
+    height: 25px;
+}
