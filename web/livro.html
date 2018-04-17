@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <nav class="navbar cor_primaria">
+            <a class="navbar-brand white" href="index.html">Livraria Online</a>
+            <div class="pesquisar">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-3" type="search" placeholder="Procurar Livros pelo título" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Pesquisar</button>
+                </form>
+            </div>
+            
+            <div class="menu carrinho float-left">
+                <button type="button"  class="btn btn-primary carrinho" data-toggle="modal" data-target="#meuModal">
+                    <img class="float-left" src="img/pedido.png">
+                    <span class="badge badge-light">1</span>
+                </button>
+                <button type="button" class="btn btn-primary carrinho">
+                    <img class="float-left" src="img/cart.png">
+                    <span class="badge badge-light">4</span>
+                </button>
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, John Vitor</p>
+                    <div class="d-inline">
+                        <a class="opcao" href="meus_pedidos.html">Minha conta</a>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container livro painel margin-top-lg">
+            <div class="row">
+                <div class="col-6 capa-livro">
+                    <img src="img/hpep.jpg">
+                </div>
+                <div class="col-6 produto">
+                    <form action="carrinho.html">
+                        <h3>Harry Potter e o enigma do principe</h3>
+                        <h5>J.K Rowling</h5>
+                        <p class="preco">R$ 39,99</p>
+                        <button class="btn btn-success" type="submit"><img src="img/add_cart.png">Adicionar ao carrinho</button>
+                        <div class="painel pagamento margin-top-m">
+                            <h7 class="secao">Formas de Pagamento</h7>
+                            <p class="margin-top-sm">Cartão de crédito:</p>
+                            <div class="d-flex justify-content-start">
+                                <img src="img/visa.png">
+                                <img src="img/mc.png">
+                                <img src="img/ae.png">
+                            </div>
+                            <p class="margin-top-lg">Cupons promocionais e cupons de troca</p> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row margin-top-lg">
+                    <div class="col-8 informacoes">
+                        <p class="secao">Informações</p>
+                    </div>
+                    <div class="col-5 justify-content-start descricao informacoes">
+                        <p><b>Título</b>Harry Potter e o Enigma do príncipe</b></p> 
+                        <p><b>Autor(a): </b>J.K Rownling<p>
+                        <p><b>Editora: </b>Rocco</p>
+                        <p><b>Edição </b>3º</p>
+                        <p><b>Ano: </b>2004</p>
+                        <p><b>Número de páginas: </b>598</p>
+                        <p><b>Dimensoes: </b> 10x10x10</p>
+                        <p><b>Peso: </b>35 gramas</p>
+                        <p><b>Data Cadastro: </b>10/12/2017</p>
+                        <p><b>Categoria(s): </b>Fantasia / Ficção</p>
+                        <p><b>Código de Barras: </b>1234567891232</p>
+                        <p><b>Grupo de Precificação: </b>Rubi - 35%</p>
+                        <p><b>Sinopse: </b><Um garoto.../p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html> 

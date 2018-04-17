@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="css/estilo.css">
+
+    </head>
+    <body>
+        <nav class="navbar cor_primaria">
+            <a class="navbar-brand white" href="index.html">Livraria Online</a>
+            <div class="pesquisar">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-3" type="search" placeholder="Procurar Livros pelo título" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Pesquisar</button>
+                </form>
+            </div>
+            
+            <div class="menu carrinho float-left">
+                <button type="button"  class="btn btn-primary carrinho" data-toggle="modal" data-target="#meuModal">
+                    <img class="float-left" src="img/pedido.png">
+                    <span class="badge badge-light">1</span>
+                </button>
+                <button type="button" class="btn btn-primary carrinho">
+                    <img class="float-left" src="img/cart.png">
+                    <span class="badge badge-light">4</span>
+                </button>
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, John Vitor</p>
+                    <div class="d-inline">
+                        <a class="opcao" href="meus_pedidos.html">Minha conta</a>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="carrinho-pedido painel margin-top-lg">
+                <h3 class="text-center">Carrinho de compra</h3>
+                <div class="itens-pedido margin-top-lg">
+                        <div class="row">
+                            <ul class="itens-header">
+                                <li class="d-flex justify-content-between">
+                                    <p class="col-5"><b>Produto</b></p>
+                                    <p class="col-1"><b>Qtd</b></p>
+                                    <p class="col-2"><b>Preço unit.</b></p>
+                                    <p class="col-2"><b>Total</b></p>
+                                    <p class="col-1"><b></b></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="container">
+                                <ul class="itens margin-top-lg">
+                                    <li class="d-flex justify-content-lg-between">
+                                        <div class="col-5 d-flex">
+                                            <img src="img/hpep.jpg">    
+                                            <p>Harry Potter e o enigma do príncipe</p>    
+                                        </div>
+                                        <div class="col-1 spinner_container">
+                                            <input type="text" min="0" class="spinner" value="2">
+                                        </div>
+                                        <p class="col-2">R$ 9,99</p>
+                                        <p class="col-2">R$ 19,98</p>
+                                        <div class="d-flex justify-content-center col-1">
+                                            <button class=" btn btn-danger btn-sm">x</button>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="d-flex justify-content-lg-between">
+                                        <div class="col-5 d-flex">
+                                            <img src="img/mvu.png">    
+                                            <p>Morro dos Ventos Uivantes</p>    
+                                        </div>
+                                        <div class="col-1 spinner_container">
+                                            <input type="text" min="0" class="spinner" value="1">
+                                        </div>
+                                        <p class="col-2">R$ 9,99</p>
+                                        <p class="col-2">R$ 9,00</p>
+                                        <div class="d-flex justify-content-center col-1">
+                                            <button class=" btn btn-danger btn-sm">x</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row margin-top-sm">
+                            <div class="container">
+                                <ul class="valores">
+                                    <li class="valor_somado d-flex">
+                                        <p class="text-left col-6">Subtotal</p>
+                                        <p class="text-right col-6">R$ 29,97,00</p>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                    <li class="valor_total d-flex">
+                                        <p class="text-left col-6">Total</p>
+                                        <p class="text-right col-6">R$ 27,97,00</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row margin-top-sm botoes">
+                            <div class="container">
+                                <div class="d-flex flex-row-reverse">
+                                    <a class="btn btn-success" role="button" href="pedido_entrega.html">Fechar carrinho</a>
+                                    <a class="btn btn-primary" role="button" href="index.html">Continuar comprando</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>  
+        </div>
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/jquery-ui.js"></script>  
+    <script>
+        $( function() {
+            $(".spinner").spinner();
+        } );
+    </script>
+</html> 

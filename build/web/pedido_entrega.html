@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="css/estilo.css">
+
+    </head>
+    <body>
+        <nav class="navbar cor_primaria">
+            <a class="navbar-brand white" href="index.html">Livraria Online</a>
+            <div class="pesquisar">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-3" type="search" placeholder="Procurar Livros pelo título" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Pesquisar</button>
+                </form>
+            </div>
+            
+            <div class="menu carrinho float-left">
+                <button type="button"  class="btn btn-primary carrinho" data-toggle="modal" data-target="#meuModal">
+                    <img class="float-left" src="img/pedido.png">
+                    <span class="badge badge-light">1</span>
+                </button>
+                <button type="button" class="btn btn-primary carrinho">
+                    <img class="float-left" src="img/cart.png">
+                    <span class="badge badge-light">4</span>
+                </button>
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, John Vitor</p>
+                    <div class="d-inline">
+                        <a class="opcao" href="meus_pedidos.html">Minha conta</a>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="carrinho-pedido painel margin-top-lg">
+                <h3 class="text-center">Informações de Entrega</h3>
+                <div class="itens-pedido margin-top-lg">
+                        <div class="row">
+                            <ul class="itens-header">
+                                <li class="d-flex justify-content-between">
+                                    <p class="col-6"><b>Produto</b></p>
+                                    <p class="col-1"><b>Qtd</b></p>
+                                    <p class="col-2"><b>Preço unit.</b></p>
+                                    <p class="col-2"><b>Total</b></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="container">
+                                <ul class="itens margin-top-lg">
+                                    <li class="d-flex justify-content-lg-between">
+                                        <div class="col-6 d-flex">
+                                            <img src="img/hpep.jpg">    
+                                            <p>Harry Potter e o enigma do príncipe</p>    
+                                        </div>
+                                        <p class="col-1">2</p>
+                                        <p class="col-2">R$ 9,99</p>
+                                        <p class="col-2">R$ 19,98</p>
+                                    </li>
+                                    <li class="d-flex justify-content-lg-between">
+                                        <div class="col-6 d-flex">
+                                            <img src="img/hpep.jpg">    
+                                            <p>Morro dos Ventos Uivantes</p>    
+                                        </div>
+                                        <p class="col-1">1</p>
+                                        <p class="col-2">R$ 9,99</p>
+                                        <p class="col-2">R$ 9,89</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row margin-top-sm">
+                            <div class="container">
+                                <ul class="valores">
+                                    <li class="valor_somado d-flex">
+                                        <p class="text-left col-6">Subtotal</p>
+                                        <p class="text-right col-6">R$ 29,97</p>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                    <li class="valor_total d-flex">
+                                        <p class="text-left col-6">Total</p>
+                                        <p class="text-right col-6">R$ 29,97</p>
+                                    </li>
+                                </ul>
+                                <p class="secao margin-top-lg">Selecione o endereço de entrega</p>
+                                <div class="enderecos margin-top-lg d-flex flex-wrap">
+                                    <div class="card endereco col-3">
+                                        <div class="header text-center">
+                                            <h5>Apê da mãe</h5>
+                                            <p>Apartamento</p>
+                                        </div>
+                                        <div class="body">
+                                            <p>Rua Dolores Duram, 67</p>
+                                            <p>08580-615 - Jardim São Manoel</p>
+                                            <p>Itaquaquecetuba/SP - Brasil</p>
+                                        </div>
+                                        <div class="footer entrega">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="ape" name="id_endereco" class="custom-control-input">
+                                                    <label class="custom-control-label" for="ape">Selecionar este</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card endereco col-3">
+                                        <div class="header text-center">
+                                            <h5>Apê da mãe</h5>
+                                            <p>Apartamento</p>
+                                        </div>
+                                        <div class="body">
+                                            <p>Rua Dolores Duram, 67</p>
+                                            <p>08580-615 - Jardim São Manoel</p>
+                                            <p>Itaquaquecetuba/SP - Brasil</p>
+                                        </div>
+                                        <div class="footer entrega">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="s" name="id_endereco" class="custom-control-input">
+                                                    <label class="custom-control-label" for="s">Selecionar este</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 adicionar">
+                                        <a class="btn btn-primary" href="#">Cadastrar endereço de entrega</a>
+                                    </div>
+                                </div>
+                                <p class="secao margin-top-lg">Selecione o frete</p>
+                                <div class="fretes">
+                                    <div class="frete">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="a" name="id_endereco" class="custom-control-input">
+                                            <label class="custom-control-label" for="s"><b>Econômico:</b> R$ 7,90</label>
+                                        </div>
+                                        
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="a" name="id_endereco" class="custom-control-input">
+                                            <label class="custom-control-label" for="s"><b>Rápido:</b> R$ 12,99</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-top-sm botoes">
+                            <div class="container">
+                                <div class="d-flex flex-row-reverse">
+                                    <a class="btn btn-success" role="button" href="pedido_pagamento.html">Adicionar informações de pagamento</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>  
+        </div>
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/jquery-ui.js"></script>  
+    <script>
+        $( function() {
+            $(".spinner").spinner();
+        } );
+    </script>
+</html> 

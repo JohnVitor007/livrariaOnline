@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <nav class="navbar cor_primaria fixed-top">
+            <a class="navbar-brand">Livraria Online</a>
+            
+            <div class="menu float-left">
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, Rodrigo</p>
+                    <div class="d-inline">
+                        <p class="opcao">Minha conta</p>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid main-row">
+            <div class="row">
+                <div class="col-md-2 menu_lateral_administracao">
+                    
+                    <ul class="list-group list-group-flush">
+                        <a href="graficos_analise.html"><li class="list-group-item inactive"><img src="img/ga.png">Gráficos de Análise</a></li></a>
+                        <a href="listar_clientes.html"><li class="list-group-item inactive"><img src="img/users.png">Usuários</a></li></a>
+                        <a href="listar_livros.html"><li class="list-group-item inactive"><img src="img/book.png">Livros</a></li></a>
+                        <a href="listar_estoque.html"><li class="list-group-item active"><img src="img/warehouse.png">Estoque</a></li></a>
+                        <a href="listar_pedidos.html"><li class="list-group-item inactive"><img src="img/asks.png">Pedidos</a></li></a>
+                        <a href="parametro.html"><li class="list-group-item inactive"><img src="img/sp.png">Parâmetros</li></a>
+                    </ul>
+                </div>
+                <div class="col-md-10 conteudo_administracao">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Lista Livros</li>
+                        </ol>
+                    </nav>
+                    <div class="painel">
+                        <h4 class="text-center">Itens de Estoque</h4>
+                        <div class="d-flex justify-content-center">
+                            <div class="form-group col-6">
+                                <label>Pesquisar</label>
+                                <input type="text" class="form-control" placeholder="Insira o título do livro">
+                            </div>
+                            
+                            <button class="btn btn-primary pesquisar_livro">Pesquisar</button>
+                            <a class="link_avancado" id="busca">Busca Avançada</a>
+                                
+                        </div>
+                        
+                        <div class="painel container col-12" id="buscaAvancada">
+                            <form>
+                                <div class="d-flex">
+                                    <div class="form-group col-6">
+                                        <label for="titulo_livro">Titulo</label>
+                                        <input type="text" placeholder="Titulo do livro" class="form-control" id="titulo_livro">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="titulo_livro">Subtitulo</label>
+                                        <input type="text" placeholder="Subtitulo do livro" class="form-control" id="titulo_livro">
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    
+                                    <div class="form-group col-6">
+                                        <label for="titulo_livro">Autor</label>
+                                        <input type="text" placeholder="Autor do livro" class="form-control" id="titulo_livro">
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <label for="titulo_livro">Edição</label>
+                                        <input type="text" placeholder="Edição" class="form-control" id="titulo_livro">
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <label for="titulo_livro">Ano</label>
+                                        <input type="text" placeholder="Ano" class="form-control" id="titulo_livro">
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <label for="titulo_livro">ISBN</label>
+                                        <input type="text" placeholder="ISBN" class="form-control" id="titulo_livro">
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                    
+                                    <div class="form-group col-6">
+                                        <label for="titulo_livro">Editora</label>
+                                        <input type="text" placeholder="Editora" class="form-control" id="titulo_livro">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="exampleFormControlTextarea1">Sinopse</label>
+                                        <input type="text" class="form-control" id="exampleFormControlTextarea1" placeholder="Sinopse">
+                                    </div>
+                                      
+                                </div>
+                                
+                                <div class="d-flex">
+                                    
+                                    <div class="form-group col-3">
+                                        <label for="titulo_livro">Largura</label>
+                                        <input type="text" placeholder="Largura" class="form-control" id="titulo_livro">
+                                    </div>
+                                    <div class="form-group col-3">
+                                        <label for="titulo_livro">Altura</label>
+                                        <input type="text" placeholder="Altura" class="form-control" id="titulo_livro">
+                                    </div>
+                                    <div class="form-group col-3">
+                                        <label for="titulo_livro">Profunfidade</label>
+                                        <input type="text" placeholder="Profundidade" class="form-control" id="titulo_livro">
+                                    </div>
+                                    <div class="form-group col-3">
+                                        <label for="titulo_livro">Peso</label>
+                                        <input type="text" placeholder="Peso" class="form-control" id="titulo_livro">
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                    
+                                    <div class="form-group col-4">
+                                        <label for="titulo_livro">Número de páginas</label>
+                                        <input type="text" placeholder="Número de Páginas" class="form-control" id="titulo_livro">
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <label for="titulo_livro">Categoria</label>
+                                        <input type="text" placeholder="Insira a categoria" class="form-control form-control-sm" id="titulo_livro">
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <label for="titulo_livro">Grupo de precificação</label>
+                                        <select class="form-control form-control-sm">
+                                            <option>Bronze</option>
+                                            <option>Prata</option>
+                                            <option>Ouro</option>
+                                            <option>Ruby</option>
+                                            <option>Diamante</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-primary col-6" role="button">Buscar</button  >
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 margin-top">
+                            <div class="d-flex justify-content-between lista margin-top-lg">
+                                <p class="col-6"><b>Titulo</b></p>
+                                <p class="col-1"><b>Edição</b></p>
+                                <p class="col-2"><b>Qtd em estoque</b></p>
+                                <p class="col-2"><b>Operação</b></p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <ul class="lista ">
+                                <li class="d-flex justify-content-lg-between">
+                                    <p class="col-6">As Crônicas do mundo emerso - A missão de Senar</p>
+                                    <p class="col-1">5º</p>
+                                    <p class="col-2">19</p>
+                                    <div class="col-2">
+                                        <a href= "consultar_item_estoque.html" class="btn btn-success btn-sm" role="button">Consultar</a>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#buscaAvancada").toggle();        
+        $("#busca").click(function(){
+            $("#buscaAvancada").toggle();
+        });
+
+
+      });
+
+  </script>
+</html> 

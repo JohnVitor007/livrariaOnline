@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <div class="nav-lg">
+            <nav class="navbar cor_primaria">
+                <a class="navbar-brand white" href="index.html">Livraria Online</a>
+                <div class="pesquisar">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-3" type="search" placeholder="Procurar Livros pelo título" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+
+                <div class="menu carrinho float-left">
+                    <button type="button"  class="btn btn-primary carrinho" data-toggle="modal" data-target="#meuModal">
+                        <img class="float-left" src="img/pedido.png">
+                        <span class="badge badge-light">1</span>
+                    </button>
+                    <button type="button" class="btn btn-primary carrinho">
+                        <img class="float-left" src="img/cart.png">
+                        <span class="badge badge-light">4</span>
+                    </button>
+                    <div class="d-block float-right">
+                        <p class="nome_usuario">Olá, John Vitor</p>
+                        <div class="d-inline">
+                            <a class="opcao" href="meus_pedidos.html">Minha conta</a>
+                            <p class="opcao">Sair</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="painel acesso">
+                <h3 class="text-center display-7">Login</h3>
+                <form action="index.html">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" placeholder="Insira o email">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" placeholder="Insira a senha">
+                    </div>
+                    <div class="d-flex">
+                        <button class=" col-12 btn btn-primary btn-lg margin-top-sm" type="button">Acessar</button>
+                    </div>
+                    <div class="row margin-top-sm">
+                        <div class="d-flex justify-content-start col-6">
+                            <a href="cadastrar_cliente.html" class="link">Não tem conta? <u>Crie a sua</u></a>
+                        </div>
+                        <div class="d-flex justify-content-end col-6">
+                            <a href="" class="link">Esqueceu sua senha?</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <nav class="navbar cor_primaria fixed-top">
+            <a class="navbar-brand">Livraria Online</a>
+            
+            <div class="menu float-left">
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, Rodrigo</p>
+                    <div class="d-inline">
+                        <p class="opcao">Minha conta</p>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid main-row">
+            <div class="row">
+                <div class="col-md-2 menu_lateral_administracao">
+                    
+                    <ul class="list-group list-group-flush">
+                        <a href="graficos_analise.html"><li class="list-group-item inactive"><img src="img/ga.png">Gráficos de Análise</a></li></a>
+                        <a href="listar_clientes.html"><li class="list-group-item active"><img src="img/users.png">Usuários</a></li></a>
+                        <a href="listar_livros.html"><li class="list-group-item inactive"><img src="img/book.png">Livros</a></li></a>
+                        <a href="listar_estoque.html"><li class="list-group-item inactive"><img src="img/warehouse.png">Estoque</a></li></a>
+                        <a href="listar_pedidos.html"><li class="list-group-item inactive"><img src="img/asks.png">Pedidos</a></li></a>
+                        <a href="parametro.html"><li class="list-group-item inactive"><img src="img/sp.png">Parâmetros</li></a>
+                    </ul>
+                </div>
+                <div class="col-md-10 conteudo_administracao">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Listar Usuários</li>
+                        </ol>
+                    </nav>
+                    <div class="painel text-center">
+                        <h4>Usuários cadastrados</h4>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link" href="listar_clientes.html">Clientes</a>
+                            </li>
+                            <a href="cadastrarUsuario.html"></a>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="listarClientes.html">Administradores</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-end margin-top-m">
+                            <a href="cadastrarLivro.html" class="btn btn-primary opcao" role="button">Cadastrar Administrador</a>
+                            
+                        </div>
+                        <div class="col-12 margin-top-lg">
+                            <div class="d-flex justify-content-between lista">
+                                <p class="col-4"><b>Nome</b></p>
+                                <p class="col-2"><b>CPF</b></p>
+                                <p class="col-2"><b>Papel</b></p>
+                                <p class="col-1"><b>Status</b></p>
+                                <p class="col-2"><b>Operação</b></p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            
+                            <ul class="lista ">
+                                <li class="d-flex justify-content-lg-between">
+                                    <p class="col-4">John Vitor da Silva Quispe </p>
+                                    <p class="col-2">43607141819</p>
+                                    <p class="col-2">Gerente de Venda</p>
+                                    <p class="col-1">Ativo</p>
+                                    <div class="col-2">
+                                        <a href= "#" class="btn btn-success btn-sm" role="button">Consultar</a>
+                                    </div>
+                                </li>                        
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html> 

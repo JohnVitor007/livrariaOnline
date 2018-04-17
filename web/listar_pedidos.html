@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <nav class="navbar cor_primaria fixed-top">
+            <a class="navbar-brand">Livraria Online</a>
+            
+            <div class="menu float-left">
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, Rodrigo</p>
+                    <div class="d-inline">
+                        <p class="opcao">Minha conta</p>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid main-row">
+            <div class="row">
+                <div class="col-md-2 menu_lateral_administracao">
+                    <ul class="list-group list-group-flush">
+                        <a href="graficos_analise.html"><li class="list-group-item inactive"><img src="img/ga.png">Gráficos de Análise</a></li></a>
+                        <a href="listar_clientes.html"><li class="list-group-item inactive"><img src="img/users.png">Usuários</a></li></a>
+                        <a href="listar_livros.html"><li class="list-group-item inactive"><img src="img/book.png">Livros</a></li></a>
+                        <a href="listar_estoque.html"><li class="list-group-item inactive"><img src="img/warehouse.png">Estoque</a></li></a>
+                        <a href="listar_pedidos.html"><li class="list-group-item active"><img src="img/asks.png">Pedidos</a></li></a>
+                        <a href="parametro.html"><li class="list-group-item inactive"><img src="img/sp.png">Parâmetros</li></a>
+                    </ul>
+                </div>
+                <div class="col-md-10 conteudo_administracao">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Listar Pedidos</li>
+                        </ol>
+                    </nav>
+                    <div class="painel text-center">
+                        <h4>Pedidos</h4>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="listarClientes.html">Em processamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="listarAdministradores.html">Aprovado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="listarAdministradores.html">Em transporte</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="listarAdministradores.html">Entregue</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="listarAdministradores.html">Pedido de troca</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="listarAdministradores.html">Troca Aprovada</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="listarAdministradores.html">Trocado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="listarAdministradores.html">Troca não autorizada</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="listarAdministradores.html">Pagamento não aprovado</a>
+                            </li>
+                        </ul>
+                        <h4>Pedidos em processamento</h4>
+                        <div class="col-12 margin-top-m">
+                            <div class="d-flex justify-content-between lista">
+                                <p class="col-5"><b>Nº Pedido</b></p>
+                                <p class="col-2"><b>Data Pedido</b></p>
+                                <p class="col-2"><b>Valor Total</b></p>
+                                <p class="col-3"><b></b></p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <ul class="lista ">
+                                <li class="d-flex justify-content-between">
+                                    <p class="col-5">00000001</p>
+                                    <p class="col-2">23/03/2014</p>
+                                    <p class="col-2">R$ 299,00</p>
+                                    <div class="col-3">
+                                        <a href= "adm_pedido.html" class="btn btn-info btn-sm" role="button">Detalhes</a>
+                                    </div>
+                                </li>                           
+                                <li class="d-flex justify-content-between">
+                                    <p class="col-5">00000001</p>
+                                    <p class="col-2">23/03/2014</p>
+                                    <p class="col-2">R$ 299,00</p>
+                                    <div class="col-3">
+                                        <a href= "#" class="btn btn-info btn-sm" role="button">Detalhes</a>
+                                    </div>
+                                </li>                           
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html> 

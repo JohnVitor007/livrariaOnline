@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="css/estilo.css">
+
+    </head>
+    <body>
+        <nav class="navbar cor_primaria">
+            <a class="navbar-brand white" href="index.html">Livraria Online</a>
+            <div class="pesquisar">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-3" type="search" placeholder="Procurar Livros pelo título" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Pesquisar</button>
+                </form>
+            </div>
+            
+            <div class="menu carrinho float-left">
+                <button type="button"  class="btn btn-primary carrinho" data-toggle="modal" data-target="#meuModal">
+                    <img class="float-left" src="img/pedido.png">
+                    <span class="badge badge-light">1</span>
+                </button>
+                <button type="button" class="btn btn-primary carrinho">
+                    <img class="float-left" src="img/cart.png">
+                    <span class="badge badge-light">4</span>
+                </button>
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, John Vitor</p>
+                    <div class="d-inline">
+                        <a class="opcao" href="meus_pedidos.html">Minha conta</a>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="carrinho-pedido painel margin-top-lg">
+                <h3 class="text-center">Informações de pagamento</h3>
+                <div class="itens-pedido margin-top-lg">
+                        <div class="row">
+                            <ul class="itens-header">
+                                <li class="d-flex justify-content-between">
+                                    <p class="col-6"><b>Produto</b></p>
+                                    <p class="col-1"><b>Qtd</b></p>
+                                    <p class="col-2"><b>Preço unit.</b></p>
+                                    <p class="col-2"><b>Total</b></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="container">
+                                <ul class="itens margin-top-lg">
+                                    <li class="d-flex justify-content-lg-between">
+                                        <div class="col-6 d-flex">
+                                            <img src="img/hpep.jpg">    
+                                            <p>Harry Potter e o enigma do príncipe</p>    
+                                        </div>
+                                        <p class="col-1">2</p>
+                                        <p class="col-2">R$ 9,99</p>
+                                        <p class="col-2">R$ 19,98</p>
+                                    </li>
+                                    <li class="d-flex justify-content-lg-between">
+                                        <div class="col-6 d-flex">
+                                            <img src="img/hpep.jpg">    
+                                            <p>Morro dos Ventos Uivantes</p>    
+                                        </div>
+                                        <p class="col-1">1</p>
+                                        <p class="col-2">R$ 9,99</p>
+                                        <p class="col-2">R$ 9,99</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row margin-top-sm">
+                            <div class="container">
+                                <ul class="valores">
+                                    <li class="valor_somado d-flex">
+                                        <p class="text-left col-6">Subtotal</p>
+                                        <p class="text-right col-6">R$ 29,97</p>
+                                    </li>
+                                    <li class="valor d-flex">
+                                        <p class="text-left col-6"><b>Frete: </b>Econômico</p>
+                                        <p class="text-right col-6">R$ +7,90</p>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                    <li class="valor_total d-flex">
+                                        <p class="text-left col-6">Total</p>
+                                        <p class="text-right col-6">R$ 35,87</p>
+                                    </li>
+                                </ul>
+                                <p class="secao margin-top-lg">Selecione o endereço de entrega</p>
+                                <div class="cartoes d-flex flex-wrap margin-top-lg">                      
+                                    <div class="cartao col-3">
+                                        <div class="header">
+                                            <p>XXXX.XXXX.XXXX.49487</p>
+                                        </div>
+                                        <div class="body">
+                                            <p><b>Titular:</b> John Vitor da Silva Quispe</p>
+                                            <p><b>Data validade:</b> 09/24</p>
+                                            <p><b>CPF: 436.071.418-19</b></p>
+                                            <div class="d-flex banco-emissor">
+                                                <p><b>Banco emissor: </b></p>
+                                                <img src="img/visa.png">
+                                            </div>
+                                        </div>
+                                        <div class="footer footer_pagamento d-flex justify-content-center">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="s" name="id_endereco" class="custom-control-input">
+                                                    <label class="custom-control-label" for="s">Selecionar este</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 adicionar">
+                                        <a class="btn btn-primary" href="#">Cadastrar Cartão de Crédito </a>
+                                    </div>
+                                </div>
+                                <p class="secao margin-top-lg">Adicionar Cupom (opcional)</p>
+                                <form class="form-inline">
+                                    
+                                    <div class="form-group mx-sm-3 mb-2">
+                                      <label for="inputPassword2" class="">Identificação do cupom: </label>
+                                      <input type="text" class="form-control" id="identificacao" placeholder="Identificação do cupom">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary mb-2">Adicionar Cupom</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row margin-top-sm botoes">
+                            <div class="container">
+                                <div class="d-flex flex-row-reverse">
+                                    <a class="btn btn-success" role="button" href="pedido.html">Finalizar Pedido</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>  
+        </div>
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/jquery-ui.js"></script>  
+    <script>
+        $( function() {
+            $(".spinner").spinner();
+        } );
+    </script>
+</html> 

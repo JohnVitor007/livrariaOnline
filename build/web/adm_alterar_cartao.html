@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <nav class="navbar cor_primaria fixed-top">
+            <a class="navbar-brand">Livraria Online</a>
+            
+            <div class="menu float-left">
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, Rodrigo</p>
+                    <div class="d-inline">
+                        <p class="opcao">Minha conta</p>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid main-row">
+            <div class="row">
+                <div class="col-md-2 menu_lateral_administracao">
+                    <ul class="list-group list-group-flush">
+                        <a href="graficos_analise.html"><li class="list-group-item inactive"><img src="img/ga.png">Gráficos de Análise</a></li></a>
+                        <a href="listar_clientes.html"><li class="list-group-item active"><img src="img/users.png">Usuários</a></li></a>
+                        <a href="listar_livros.html"><li class="list-group-item inactive"><img src="img/book.png">Livros</a></li></a>
+                        <a href="listar_estoque.html"><li class="list-group-item inactive"><img src="img/warehouse.png">Estoque</a></li></a>
+                        <a href="listar_pedidos.html"><li class="list-group-item inactive"><img src="img/asks.png">Pedidos</a></li></a>
+                        <a href="parametro.html"><li class="list-group-item inactive"><img src="img/sp.png">Parâmetros</li></a>
+                    </ul>
+                </div>
+                <div class="col-md-10 conteudo_administracao">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Consultar Cliente</li>
+                        </ol>
+                    </nav>
+                    <div class="painel">
+                        <h4 class="text-center">Alterar cartão de cliente</h4>
+                        <div class="container user-painel">
+                            <div class="form">
+                                <form class="margin-top-lg" action="consultar_cliente.html">
+                                    <div class="row">
+                                        <div class="form-group col-12">
+                                            <label for="numero_cartao">Número do cartão</label>
+                                            <input type="text" id="numero_cartao" value="4213.8798.8789.7879" class="form-control" placeholder="Ex XXXX.XXXX.XXXX.XXXX">
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label for="numero_cartao">Nome do titular do cartão</label>
+                                            <input type="text" id="numero_cartao" value="John Vitor da Silva Quispe" class="form-control" placeholder="Exatamente como está impresso no cartão">
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label for="numero_cartao">Código de segurança</label>
+                                            <input type="text" id="numero_cartao" value="542" class="form-control" placeholder="Insira o código de segurança">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Selecione a bandeira do cartão</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" checked="" id="visa" name="bandeira" class="custom-control-input">
+                                        <label class="custom-control-label" for="visa"><img src="img/visa.png" class="img-bandeira"></label>
+                                    </div>
+
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="master_card" name="bandeira" class="custom-control-input">
+                                        <label class="custom-control-label" for="master_card"><img src="img/mc.jpg" class="img-bandeira"></label>
+                                    </div>
+
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="american_express" name="bandeira" class="custom-control-input">
+                                        <label class="custom-control-label" for="american_express"><img src="img/ae.png" class="img-bandeira"></label>
+                                    </div>
+                                    <div class="form-group margin-top-sm">
+                                        <button type="submit" class="btn btn-success col-12">Alterar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html> 

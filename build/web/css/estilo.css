@@ -1,10 +1,35 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body, html{
+    height: 100%;
+}
+
+body{
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+textarea{
+    resize: none;
+}
+
 .cor_primaria{
     background-color: #2196F3;
     color: #fff;
+    height: 70px;
+}
+
+.nav-lg{
+    background-color: #2196F3;
+    color: #fff;
+    height: 50%;
+    box-shadow: 1px 2px 5px #888888;
 }
 
 .sublinhado{
-    border-bottom: 1px solid #757575;
+    border-bottom: 1px solid #E0E0E0;
 }
 
 .cor_texto{
@@ -15,8 +40,25 @@
     color: #2196F3;
 }
 
-.margin-top{
+.margin-top-slg{
     margin-top: 40px;
+}
+
+.margin-top-lg{
+    margin-top: 30px;
+}
+
+.margin-top-m{
+    margin-top: 20px;
+}
+
+
+.margin-top-sm{
+    margin-top: 10px;
+}
+
+.padding-sm{
+    padding: 10px;
 }
 
 .card{
@@ -44,24 +86,39 @@
 
 .menu .nome_usuario{
     font-size: 18px;
-    padding-top: 2px;
+    padding-top: 3px;
+}
+
+.menu .login{
+    font-size: 18px;
+    padding-top: 10px;
 }
 
 
 .menu .opcao{
     float: left;
-    margin-right: 10px;
+    margin-top: -5px;
+    margin-right: 15px;
     font-size: 15px;
+    font-weight: bold;
+    color: #fff;
 }
 
+.menu .carrinho {
+    margin-right: 10px;
+    border: 1px solid #fff;
+    width: 100px;
+    margin-top: 3px;
+}
+    
 
-.livros_container{
-    margin-top: 30px;
+.menu .carrinho img{
+    width: 30px;
+    height: 30px;
 }
 
 .menu_lateral{
-    border-right: 1px solid #F5F5F5;
-    background-color: #FAFAFA;
+    border-right: 1px solid #EEEEEE;
     padding-top: 20px;
 }
 
@@ -70,6 +127,592 @@
     margin: 0;
 }
 
+
+
 .menu_lateral input[type=text]{
     height: 25px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #E0E0E0;
+    background-color: #F5F5F5;
+}
+
+.menu_lateral_administracao{
+    position: absolute;
+    height: calc(100% - 70px);
+    background-color: #212121;
+    padding: 0;
+    position: fixed;
+    margin-top: 70px;
+}
+
+.menu_lateral_administracao a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu_lateral_administracao ul{
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid #424242;
+    margin-top: 1px;
+}
+
+.menu_lateral_administracao li{
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 1px solid #424242;
+    cursor: pointer;
+    height: 50px;
+}
+
+.menu_lateral_administracao .active{
+    background-color: #2196F3;
+}
+
+.menu_lateral_administracao .inactive:hover{
+    background-color: #424242;
+}
+
+.menu_lateral_administracao li img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.conteudo_administracao{
+    padding-top: 10px;
+    position: absolute;
+    margin-left: 16.7%;
+}
+
+.conteudo_administracao h4{
+    color: #757575;
+    margin-top: 10px;
+}
+
+.conteudo_administracao .opcao{
+    margin-left: 10px;
+    color: #fff;
+}
+
+.conteudo_administracao .lista{
+    list-style: none;
+    padding: 0;
+}
+
+.conteudo_administracao .lista .header-lista{
+    background-color: blue;
+}
+
+
+.conteudo_administracao .lista li{
+    width: 100%;
+    height: 48px;
+    border: 1px solid #E0E0E0;
+    margin-top: 10px;
+}
+
+
+.conteudo_administracao .lista li p{
+    margin-top: 12px;
+    
+}
+.conteudo_administracao .lista li a{
+    margin-top: 8px;
+}
+
+
+
+.conteudo_administracao .lista .checkbox-container{
+    width: 38px;
+    height: 38px;
+}
+
+.conteudo_administracao .lista li .checkbox-container input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+    border: none;
+    border: 1px solid #E0E0E0;
+    margin-top: 14px;
+}
+
+
+
+.fill{
+    min-height: 100%;
+}
+
+.pesquisar input[type=search]{
+   width: 300px;
+}
+
+.pesquisar button{
+    border: 1px solid #fff;
+}
+
+.carrinho{
+    cursor: pointer;
+}
+
+.padding-list{
+    padding: 5px;
+    padding-top: 15px;
+}
+
+.acesso{
+    width: 500px;
+    min-height: 400px;
+    margin: 0 auto;
+    margin-top: 70px;
+    z-index: 9999;
+}
+
+.carrinho-pedido{
+}
+
+.carrinho-pedido ul{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0; 
+    margin: 0 auto;
+}
+
+.carrinho-pedido .botoes a{
+    margin-left: 10px;
+}
+
+.carrinho-pedido .valores .valor{
+    width: 90%;
+    height: 20px;
+    float: right;
+    font-size: 12pt;
+    margin-top: 2px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+
+.carrinho-pedido .valores .valor_somado{
+    font-weight: bolder;
+    color: #616161;
+    padding-top: 15px;
+    height: 40px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 5px;
+}
+
+.carrinho-pedido .valores .valor_total{
+    font-weight: bolder;
+    color: #616161;
+    padding-top: 15px;
+    height: 40px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 5px;
+    font-size: 16pt;
+    text-transform: uppercase;
+}
+
+
+.carrinho-pedido .itens-pedido ul{
+    
+}
+
+.carrinho-pedido .itens-pedido ul li{
+    text-align: center;
+}
+
+.carrinho-pedido .itens li{
+    border-top: 1px solid #E0E0E0;
+    height: 70px;   
+}
+
+.carrinho-pedido .itens li:last-child{
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.carrinho-pedido .itens li p{
+    height: 50px; 
+    margin-top: 23px;
+}
+
+.carrinho-pedido .itens li img{
+    width: 40px;
+    height: 60px;
+    margin-top: 5px;
+    margin-right: 30px;
+}
+
+.carrinho-pedido .itens li button{
+    margin-top: 0px;
+    height: 30px;
+    width: 30px;
+    margin-top: 18px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.carrinho-pedido .itens li .spinner_container{
+    margin-top: 15px;
+}
+
+.carrinho-pedido .itens li .spinner_container input[type=text]{
+    width: 20px;
+}
+
+.carrinho-pedido .endereco p{
+    margin: 0;
+}
+
+.carrinho-pedido .pagamento img{
+    width: 45px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.carrinho-pedido .pagamento p{
+    margin: 0;
+}
+
+.painel{
+    background: #fff;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;    
+}
+
+.livro{
+    margin-bottom: 10px;
+}
+
+.livro .capa-livro{
+}
+
+.livro .capa-livro img{
+    height: 450px;
+    width: 300px;
+    margin-left: calc(50% - 150px);
+}
+
+.livro .produto{
+    border-left: 1px solid #E0E0E0;
+}
+
+.livro .produto .preco{
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.livro .produto .pagamento p{
+    margin: 0;
+    margin: 5px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.livro .produto .pagamento img{
+    width: 45px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.livro .descricao p{
+   margin: 0;
+}
+
+.livro .informacoes{
+   margin-left: 100px;
+}
+
+
+.user-painel{
+}
+
+.user-painel .opcao{
+    margin-right: 4.7%;
+}
+
+.user-painel .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.enderecos{
+    width: 100%;
+}
+
+.enderecos .endereco{
+    padding: 0;
+    min-height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    padding-bottom: 10px;
+    margin-left: 6.4%;
+}
+
+.enderecos .endereco p{
+    margin: 0;
+
+}
+
+.enderecos .endereco .header{
+    width: 100%;
+    min-height: 10px;
+    background-color: #2196F3;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.enderecos .endereco .header h5{
+    color: #fff;
+    margin: 0;
+}
+
+.enderecos .endereco .header p{
+    font-size: 13px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+
+.enderecos .endereco .body{
+    padding: 5px;
+}
+
+.enderecos .endereco .body p{
+    font-size: 14px;
+}
+
+.enderecos .endereco .footer{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.enderecos .endereco .entrega{
+    border-top: 1px solid #E0E0E0
+}
+
+.enderecos .endereco .entrega:hover{
+    color: blue;
+}
+
+.adicionar{
+}
+
+.adicionar a{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.cartoes{
+    width: 100%;
+}
+
+.cartoes .cartao{
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 0;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 6.4%;
+    height: 220px;
+}
+
+.cartoes .cartao .header{
+    width: 100%;
+    background-color: blue;
+    color: #fff;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: bolder;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.cartoes .cartao .body{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2px;
+    font-size: 14px;
+}
+
+.cartoes .cartao .body .banco-emissor{
+    margin-top: 5px;
+}
+
+
+
+.cartoes .cartao .body .banco-emissor img{
+    width: 45px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+
+.cartoes .cartao .footer{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.cartoes .cartao .footer_pagamento{
+    border-top: 1px solid #E0E0E0
+}
+
+.cartoes .cartao p{
+    margin: 0;
+}
+
+.img-bandeira{
+    width: 80px;
+    height: 50px;
+}
+
+.cupons h5{
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.cupons-header{
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    color: red;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.list-header{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.status{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status .state{
+    width: 200px;
+    min-height: 100px;
+}
+
+.status .state img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.status .state p{
+    margin: 0;
+    text-align: center;
+}
+
+.status .state .texto{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.status .state .data{
+    font-size: 12px;    
+    
+}
+
+.inativo img{
+    background-color: #E0E0E0;
+}
+
+
+.inativo p{
+    color: #BDBDBD;
+}
+
+.ativo img{
+    background-color: #4CAF50;
+
+}
+
+.ativo p{
+    color: #616161;
+}
+
+.erro img{
+    background-color: #F44336;
+}
+
+.erro p{
+    color: #F44336;
+}
+
+
+
+.cadastro{
+    width: 50%;
+    margin: 20px auto;
+}
+
+.secao{
+    margin-left: 0px;
+    border-bottom: 1px solid #E0E0E0;
+    font-weight: bolder;
+}
+
+.white{
+    color: #fff;
+}
+
+.green{
+    color: #4CAF50;
+}
+
+.link{
+    color: #007bff;
+}
+
+.capa-livro_adm{
+    height: 400px;
+    width: 250px;
+}
+
+.item-estoque p{
+    margin: 0;
+    margin-top: 5px;
+}
+
+.pesquisar_livro{
+    height: 40px;
+    margin-top: 30px;
+}
+
+.link_avancado{
+    margin-top: 40px;
+    margin-left: 10px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.form_estoque{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form_link{
+    text-decoration: underline;
+    margin-top: 30px;
+    border: none;
+    color: #2196F3;
 }

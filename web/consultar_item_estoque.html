@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <nav class="navbar cor_primaria fixed-top">
+            <a class="navbar-brand">Livraria Online</a>
+            
+            <div class="menu float-left">
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, Rodrigo</p>
+                    <div class="d-inline">
+                        <p class="opcao">Minha conta</p>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid main-row">
+            <div class="row">
+                <div class="col-md-2 menu_lateral_administracao">     
+                    <ul class="list-group list-group-flush">
+                        <a href="graficos_analise.html"><li class="list-group-item inactive"><img src="img/ga.png">Gráficos de Análise</a></li></a>
+                        <a href="listar_clientes.html"><li class="list-group-item inactive"><img src="img/users.png">Usuários</a></li></a>
+                        <a href="listar_livros.html"><li class="list-group-item inactive"><img src="img/book.png">Livros</a></li></a>
+                        <a href="listar_estoque.html"><li class="list-group-item active"><img src="img/warehouse.png">Estoque</a></li></a>
+                        <a href="listar_pedidos.html"><li class="list-group-item inactive"><img src="img/asks.png">Pedidos</a></li></a>
+                        <a href="parametro.html"><li class="list-group-item inactive"><img src="img/sp.png">Parâmetros</li></a>
+                    </ul>
+                </div>
+                <div class="col-md-10 conteudo_administracao">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active">Lista Livros</li>
+                            <li class="breadcrumb-item active" aria-current="page">Consultar Livro</li>
+                        </ol>
+                    </nav>
+                    <div class="painel">
+                        <h4 class="text-center">Consulta de Item de Estoque</h4>
+                        <div class="margin-top-m d-flex justify-content-center livro">
+                            <div class="capa_livro col-3 justify-content-end">
+                                <img class="capa-livro_adm" src="img/hpep.jpg">
+                            </div>
+                            <div class="col-5 justify-content-start descricao">
+                                <h5>Harry Potter e o Enigma do príncipe</h5> 
+                                <p><b>Autor(a): </b>J.K Rownling<p>
+                                <p><b>Editora: </b>Rocco</p>
+                                <p><b>Edição </b>3º</p>
+                                <p><b>Ano: </b>2004</p>
+                                <p><b>Número de páginas: </b>598</p>
+                                <p><b>Dimensoes: </b> 10x10x10</p>
+                                <p><b>Peso: </b>35 gramas</p>
+                                <p><b>Data Cadastro: </b>10/12/2017</p>
+                                <p><b>Categoria(s): </b>Fantasia / Ficção</p>
+                                <p><b>Código de Barras: </b>1234567891232</p>
+                                <p><b>Grupo de Precificação: </b>Rubi - 35%</p>
+                                <p><b>Sinopse: </b><Um garoto.../p>
+                            </div>
+                        </div>
+                        <div class="container item-estoque margin-top-lg">
+                            <p class="secao">Informações de Estoque</p
+                            <p><b>Custo:</b> R$ 7,90</p>
+                            <p><b>Preço:</b> R$ 9,90</p>
+                            <p><b>Quantidade em estoque:</b>     19</p>
+                            <a class="btn btn-success" href="dar_entrada_estoque.html">Dar Entrada de Estoque</a>
+                        </div>
+                        <div class="container">
+                            <p class="secao margin-top-lg">Transações</p>
+                        </div>
+                        
+                        <div class="container item-estoque">
+                        </div>
+                        <div class="container">
+                            <div class="col-12">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-success flex-column align-items-start">
+                                      <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Entrada de Estoque</h5>
+                                      </div>
+                                        <p class="mb-1"><b>Data:</b>16/03/2018</p>
+                                        <p class="mb-1"><b>Quantidade:</b>30</p>
+                                        <p class="mb-1"><b>Fornecedor:</b>Livraria Saraiva - 46366987788/89 - (11) 46480775 - for.livro@saraiva.com</p>
+                                    </a>
+                                    
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger flex-column align-items-start">
+                                      <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Baixa de Estoque</h5>
+                                      </div>
+                                        <div class="d-flex justify-content-between">
+                                        <p class="mb-1"><b>Data:</b>24/03/2018</p>
+                                        <p class="mb-1"><b>Quantidade:</b>5</p>
+                                        <p class="mb-1"><b>Pedido nº 00000028</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger flex-column align-items-start">
+                                      <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Baixa de Estoque</h5>
+                                      </div>
+                                        <div class="d-flex justify-content-between">
+                                        <p class="mb-1"><b>Data:</b>02/04/2018</p>
+                                        <p class="mb-1"><b>Quantidade:</b>5</p>
+                                        <p class="mb-1"><b>Pedido nº 00000047</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action list-group-item-success flex-column align-items-start">
+                                      <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Entrada de Estoque</h5>
+                                      </div>
+                                        <p class="mb-1"><b>Data:</b>25/02/2018</p>
+                                        <p class="mb-1"><b>Quantidade:</b>30</p>
+                                        <p class="mb-1"><b>Fornecedor:</b>Livraria Saraiva - 46366987788/89 - (11) 46480775 - for.livro@saraiva.com</p>
+                                    </a>
+                                  </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html> 

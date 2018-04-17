@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <nav class="navbar cor_primaria">
+            <a class="navbar-brand white" href="index.html">Livraria Online</a>
+            <div class="pesquisar">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-3" type="search" placeholder="Procurar Livros pelo título" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Pesquisar</button>
+                </form>
+            </div>
+            
+            <div class="menu carrinho float-left">
+                <button type="button"  class="btn btn-primary carrinho" data-toggle="modal" data-target="#meuModal">
+                    <img class="float-left" src="img/pedido.png">
+                    <span class="badge badge-light">1</span>
+                </button>
+                <button type="button" class="btn btn-primary carrinho">
+                    <img class="float-left" src="img/cart.png">
+                    <span class="badge badge-light">4</span>
+                </button>
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, John Vitor</p>
+                    <div class="d-inline">
+                        <a class="opcao" href="meus_pedidos.html">Minha conta</a>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="painel cadastro">
+            <div class="container">
+                <h3>Cadastro de clientes</h3>
+                <form class="margin-top-lg">
+                    <p class="secao margin-top-m">Dados de Acesso</p>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="Email">
+                            <small id="senha" class="form-text text-muted">
+                                Não se preocupe, não compartilharemos com ninguém
+                            </small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="">Senha</label>
+                            <input type="password" name="senha" placeholder="Senha" class="form-control">
+                            <small id="senha" class="form-text text-muted">
+                                8 caracteres incluindo caracteres especiais e letras maiúsculas e minúsculas
+                            </small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="">Repita a senha</label>
+                            <input type="password" name="senhaRepitida" placeholder="Repita a senha" class="form-control">
+                        </div>
+                    </div>
+                    <p class="secao margin-top-lg">Dados Pessoais</p>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="">Nome completo</label>
+                            <input type="text" name="nome" class="form-control" placeholder="Nome completo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-7">
+                            <label for="">CPF</label>
+                            <input type="text" name="cpf" class="form-control" placeholder="Sem traços ou pontos">
+                        </div>
+                        <div class="form-group col-5">
+                            <label for="">Data de Nascimento</label>
+                            <input type="text" name="dataNascimento" class="form-control" placeholder="No formato dd/mm/aaaa">
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="form-group col-3">
+                            <label for="">DDD</label>
+                            <input type="text" name="ddd"  class="form-control" placeholder="DDD">
+                        </div>
+                        <div class="form-group col-9">
+                            <label for="">Telefone</label>
+                            <input type="text" name="telefone" class="form-control" placeholder="Telefone">
+                        </div>
+                    </div>
+                    
+                    <p class="secao margin-top-lg">Endereco de cobrança</p>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="">Tipo Endereço</label>
+                            <select class="form-control" name="tipo_endereço">
+                                <option value=""></option>
+                                <option value="Residencial">Residencial</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-8">
+                            <label for="">CEP</label>
+                            <input type="text" class="form-control" name="c_cep" placeholder="Sem traços ou pontos">
+                        </div>
+                        <div class="col-4">
+                            <a class="form_link form-control" href="#">Não sei meu CEP</a>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                         <div class="form-group col-6">
+                            <label for="">Tipo Logradouro</label>
+                            <select name="c_tipoLogradouro" class="form-control">
+                                <option value="">Selecione</option>
+                                <option value="rua">Rua</option>
+                                <option value="viela">Viela</option>
+                                <option value="avenida">Avenida</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="">Logradouro</label>
+                            <input type="text" name="c_logradouro" placeholder="Logradouro" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-3">
+                            <label for="">Numero</label>
+                            <input type="text" name="c_numero" placeholder="Número" class="form-control">
+                        </div>
+                        <div class="form-group col-9">
+                            <label for="">Bairro</label>
+                            <input type="text" name="c_bairro" placeholder="Bairro" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                         
+                        <div class="form-group col-6">
+                            <label for="">Cidade</label>
+                            <input type="text" name="c_cidade" placeholder="Cidade" class="form-control">
+                        </div>
+                        <div class="form-group col-2">
+                            <label for="">UF</label>
+                            <select name="c_uf" class="form-control">
+                                <option value="">--</option>
+                                <option value="SP">SP</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="">País</label>
+                            <input type="text" name="c_pais" placeholder="Pais" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="observacoes">Observações</label>
+                            <textarea class="form-control" name="c_observacoes" id="observaoes" rows="2" placeholder="Opcional"></textarea>
+                        </div>
+                    </div>
+                    <p class="secao margin-top-m">Endereco de entrega</p>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="">Apelido endereço</label>
+                            <input type="text" name="e_apelido" placeholder="Apelido do endereço" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="">Tipo Endereço</label>
+                            <select name="e_tipo_endereco" class="form-control">
+                                <option value="">Selecione</option>
+                                <option value="Casa">Casa</option>
+                                <option value="Apartamento">Apartamento</option>
+                                <option value="Comercial">Comercial</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-8">
+                            <label for="">CEP</label>
+                            <input type="text" class="form-control" name="e_cep" placeholder="Sem traços ou pontos">
+                        </div>
+                        <div class="col-4">
+                            <a class="form_link form-control" href="#">Não sei meu CEP</a>
+                        </div>
+                    </div>  
+                    <div class="row">
+                         <div class="form-group col-6">
+                            <label for="">Tipo Logradouro</label>
+                            <select class="form-control">
+                                <option value="">Selecione</option>
+                                <option value="Rua">Rua</option>
+                                <option value="Avenida">Avenida</option>
+                                <option value="Viela">Viela</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="">Logradouro</label>
+                            <input type="text" class="form-control" placeholder="Logradouro">
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="form-group col-4">
+                            <label for="">Numero</label>
+                            <input type="text" name="numero" placeholder="Número" class="form-control">
+                        </div> 
+                        <div class="form-group col-8">
+                            <label for="">Bairro</label>
+                            <input type="text" placeholder="Bairro" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="">Cidade</label>
+                            <input type="text" placeholder="Cidade" class="form-control">
+                        </div>
+                        <div class="form-group col-2">
+                            <label for="">UF</label>
+                            <select class="form-control">
+                                <option>--</option>
+                                <option value="sp">SP</option>
+                            </select>
+                        </div>  
+                        <div class="form-group col-4">
+                            <label for="">País</label>
+                            <input name="pais" type="text" placeholder="Pais" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="observacoes">Observações</label>
+                            <textarea class="form-control" name="e_observacoes" id="observaoes" rows="2" placeholder="Opcional"></textarea>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-success col-6">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html> 

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <nav class="navbar cor_primaria">
+            <a class="navbar-brand white" href="index.html">Livraria Online</a>
+            <div class="pesquisar">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-3" type="search" placeholder="Procurar Livros pelo título" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Pesquisar</button>
+                </form>
+            </div>
+            
+            <div class="menu float-left">
+                <img class="float-left carrinho" src="img/cart.png">
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, Rodrigo</p>
+                    <div class="d-inline">
+                        <a class="opcao" href="meus_pedidos.html">Minha conta</a>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid main-row">
+            <div class="row">
+                <div class="col-md-2 menu_lateral_administracao">
+                    
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item inactive"><img src="img/ga.png">Gráficos de Análise</li>
+                        <li class="list-group-item inactive"><img src="img/users.png">Usuários</li>
+                        <li class="list-group-item active"><img src="img/book.png">Livros</li>
+                        <li class="list-group-item inactive"><img src="img/warehouse.png">Estoque</li>
+                        <li class="list-group-item inactive"><img src="img/asks.png">Pedidos</li>
+                        <li class="list-group-item inactive"><img src="img/sp.png">Parâmetros</li>
+                    </ul>
+                </div>
+                <div class="col-md-10 conteudo_administracao">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Listar Usuários</li>
+                        </ol>
+                    </nav>
+                    <div class="painel">
+                        <h4>Usuários cadastrados</h4>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link" href="listarClientes.html">Clientes</a>
+                            </li>
+                            <a href="cadastrarUsuario.html"></a>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="listarClientes.html">Administradores</a>
+                            </li>
+                        </ul>
+                        <div class="container  margin-top-m">
+                            <h3>Cadastro de clientes</h3>
+                            <form class="margin-top-m">
+                                <p class="secao margin-top-m">Dados Pessoais</p>
+                                <div class="row">
+                                    <div class="form-group col-7">
+                                        <label for="">Nome completo</label>
+                                        <input type="text" class="form-control" placeholder="Nome completo">
+                                    </div>
+                                    <div class="form-group col-5">
+                                        <label for="">CPF</label>
+                                        <input type="text" class="form-control" placeholder="Sem traços ou pontos">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-4">
+                                        <label for="">Data de Nascimento</label>
+                                        <input type="text" class="form-control" placeholder="No formato dd/mm/aaaa">
+                                    </div>
+                                    <div class="form-group col-3">
+                                        <label for="">DDD</label>
+                                        <input type="text" class="form-control" placeholder="DDD">
+                                    </div>
+                                    <div class="form-group col-5">
+                                        <label for="">Telefone</label>
+                                        <input type="text" class="form-control" placeholder="Telefone">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-6">
+                                        <label for="">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email">
+                                        <small id="senha" class="form-text text-muted">
+                                            Não se preocupe, não compartilharemos com ninguém
+                                        </small>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="">Senha</label>
+                                        <input type="password" class="form-control">
+                                        <small id="senha" class="form-text text-muted">
+                                            8 caracteres incluindo caracteres especiais e letras maiúsculas e minúsculas
+                                        </small>
+                                    </div>
+                                </div>
+                                <p class="secao margin-top-m">Endereco</p>
+                                <div class="row">
+                                     <div class="form-group col-5">
+                                        <label for="">Tipo Logradouro</label>
+                                        <select class="form-control">
+                                            <option>--Selecione--</option>
+                                            <option>Casa</option>
+                                            <option>Apartamento</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-5">
+                                        <label for="">Logradouro</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <label for="">Numero</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                     <div class="form-group col-4">
+                                        <label for="">Bairro</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <label for="">Cidade</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <label for="">UF</label>
+                                        <select class="form-control">
+                                            <option>--Selecione--</option>
+                                            <option>SP</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <label for="">País</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-success col-6">Cadastrar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html> 

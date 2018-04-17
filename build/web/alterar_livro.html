@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <nav class="navbar cor_primaria">
+            <a class="navbar-brand white" href="index.html">Livraria Online</a>
+            <div class="pesquisar">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-3" type="search" placeholder="Procurar Livros pelo título" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Pesquisar</button>
+                </form>
+            </div>
+            
+            <div class="menu carrinho float-left">
+                <button type="button"  class="btn btn-primary carrinho" data-toggle="modal" data-target="#meuModal">
+                    <img class="float-left" src="img/pedido.png">
+                    <span class="badge badge-light">1</span>
+                </button>
+                <button type="button" class="btn btn-primary carrinho">
+                    <img class="float-left" src="img/cart.png">
+                    <span class="badge badge-light">4</span>
+                </button>
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, John Vitor</p>
+                    <div class="d-inline">
+                        <a class="opcao" href="meus_pedidos.html">Minha conta</a>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid main-row">
+            <div class="row">
+                <div class="col-md-2 menu_lateral_administracao">
+                    
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item inactive"><img src="img/ga.png">Gráficos de Análise</li>
+                        <li class="list-group-item inactive"><img src="img/users.png">Usuários</li>
+                        <li class="list-group-item active"><img src="img/book.png">Livros</li>
+                        <li class="list-group-item inactive"><img src="img/warehouse.png">Estoque</li>
+                        <li class="list-group-item inactive"><img src="img/asks.png">Pedidos</li>
+                        <li class="list-group-item inactive"><img src="img/sp.png">Parâmetros</li>
+                    </ul>
+                </div>
+                <div class="col-md-10 conteudo_administracao">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="listarLivros.html">Lista Livros</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Lista Livros</li>
+                        </ol>
+                    </nav>
+                    <div class="painel">
+                        <h4 class="text-center">Alterar Livro</h4>
+                        <div class="container">
+                            <form>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="titulo">Titulo</label>
+                                            <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Insita o titulo do livro">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="subtitulo">Subtitulo</label>
+                                            <input type="text" class="form-control" id="subtitulo" name="subtitulo" placeholder="Insita o subtitulo do livro">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="form-group">
+                                            <label for="subtitulo">Edição</label>
+                                            <input type="text" class="form-control" id="edicao" name="edicao" placeholder="Insita o subtitulo do livro">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-group">
+                                            <label for="subtitulo">Ano</label>
+                                            <input type="text" class="form-control" id="ano" name="ano" placeholder="Insita o subtitulo do livro">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-group">
+                                            <label for="subtitulo">ISBN</label>
+                                            <input type="text" class="form-control" id="isbn" name="isbn" placeholder="Insita o subtitulo do livro">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-group">
+                                            <label for="num_pag">Número de páginas</label>
+                                            <input type="text" class="form-control" id="num_pag" name="numero_paginas" placeholder="Insita o subtitulo do livro">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="form-group">
+                                            <label for="num_pag">Altura</label>
+                                            <input type="text" class="form-control" id="num_pag" name="numero_paginas" placeholder="Insita o subtitulo do livro">
+                                        </div>
+                                    </div> 
+                                    <div class="col-2">
+                                        <div class="form-group">
+                                            <label for="num_pag">Largura</label>
+                                            <input type="text" class="form-control" id="num_pag" name="numero_paginas" placeholder="Insita o subtitulo do livro">
+                                        </div>
+                                    </div> 
+                                    <div class="col-2">
+                                        <div class="form-group">
+                                            <label for="num_pag">Profundidade</label>
+                                            <input type="text" class="form-control" id="num_pag" name="numero_paginas" placeholder="Insita o subtitulo do livro">
+                                        </div>
+                                    </div> 
+                                    <div class="col-2">
+                                        <div class="form-group">
+                                            <label for="num_pag">Peso</label>
+                                            <input type="text" class="form-control" id="num_pag" name="numero_paginas" placeholder="Insita o subtitulo do livro">
+                                        </div>
+                                    </div> 
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label for="unidadeMedidaPeso">Unidade de Medida</label>
+                                            <select class="form-control" id="unidadeMedidaPeso">
+                                                <option>Gramas</option>
+                                                <option>Quilos</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="categoria">Categoria</label>
+                                        <input type="text" placeholder="Insira uma categoria" class="form-control" id="categoria" name="categoria">
+                                        <a href="#" class="text-right">Adicionar mais uma categoria</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="categoria">Categoria</label>
+                                        <input type="text" placeholder="Insira uma categoria" class="form-control" id="categoria" name="categoria">
+                                        <a href="#" class="text-right red">Remover categoria</a>
+                                    </div>
+                                </div>
+                                <div class="row margin-top-sm">
+                                    <div class="col-12">
+                                        <label for="categoria">Autor</label>
+                                        <input type="text" placeholder="Insira um(a) autor(a)" class="form-control" id="categoria" name="categoria">
+                                        <a href="#" class="text-right">Adicionar autor</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="categoria">Autor</label>
+                                        <input type="text" placeholder="Insira um(a) autor(a)" class="form-control" id="categoria" name="categoria">
+                                        <a href="#" class="text-right red">Remover autor</a>
+                                    </div>
+                                </div>
+                                <div class="row margin-top-sm">
+                                    <div class="col-6">
+                                        <label for="codBarras">Código de barras</label>
+                                        <input type="text" placeholder="Insiro código de barras sem traços e pontos" class="form-control" id="codBarras" name="categoria">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="unidadeMedidaPeso">Grupo de precificação</label>
+                                        <select class="form-control" id="unidadeMedidaPeso">
+                                            <option>--Selecione--</option>
+                                            <option>Bronze</option>
+                                            <option>Prata</option>
+                                            <option>Ouro</option>
+                                            <option>Rubi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row margin-top-sm">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="sinopse">Sinopse</label>
+                                            <textarea class="form-control" id="sinopse" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center margin-top-sm">
+                                    <button type="button" class="btn btn-success btn-lg col-8">Alterar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html> 

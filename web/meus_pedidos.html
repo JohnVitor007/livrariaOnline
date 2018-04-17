@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css">
+
+    </head>
+    <body>
+        <nav class="navbar cor_primaria">
+            <a class="navbar-brand white" href="index.html">Livraria Online</a>
+            <div class="pesquisar">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-3" type="search" placeholder="Procurar Livros pelo título" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Pesquisar</button>
+                </form>
+            </div>
+            
+            <div class="menu carrinho float-left">
+                <button type="button"  class="btn btn-primary carrinho" data-toggle="modal" data-target="#meuModal">
+                    <img class="float-left" src="img/pedido.png">
+                    <span class="badge badge-light">1</span>
+                </button>
+                <button type="button" class="btn btn-primary carrinho">
+                    <img class="float-left" src="img/cart.png">
+                    <span class="badge badge-light">4</span>
+                </button>
+                <div class="d-block float-right">
+                    <p class="nome_usuario">Olá, John Vitor</p>
+                    <div class="d-inline">
+                        <a class="opcao" href="meus_pedidos.html">Minha conta</a>
+                        <p class="opcao">Sair</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <nav class="margin-top-lg" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="listarLivros.html">Minha Conta</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Pedidos</li>
+                </ol>
+            </nav>
+            <div class="user-painel painel">
+                <ul class="nav nav-tabs margin-top-sm">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="meus_pedidos.html">Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meus_enderecos.html">Endereços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meus_cartoes.html">Cartões</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meus_cupons.html">Cupons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meu_cadastro.html">Dados de cadastro</a>
+                    </li>
+                </ul>               
+                <h3 class="text-center margin-top-lg">Meus Pedidos</h3>
+                <div class="container margin-top-m">
+                    <div class="list-header d-flex justify-content-between text-center">
+                        <div class="col-3">
+                            <b>Número do pedido</b>
+                        </div>
+                        <div class="col-3">
+                            <b>Status</b>
+                        </div>
+                        <div class="col-3">
+                            <b>Valor</b>
+                        </div>
+                        <div class="col-3">
+                            <b></b>
+                        </div>
+                    </div>
+                    <ul class="list-group margin-top-m">
+                        <li class="list-group-item d-flex justify-content-between text-center">
+                            <div class="col-3">
+                                00000001
+                            </div>
+                            <div class="col-3">
+                                Entregue
+                            </div>
+                            <div class="col-3">
+                                R$ 99,99
+                            </div>
+                            <div class="col-3">
+                                <div class="">
+                                    <a class="link text-center" href="pedido.html"><u>Detalhes</u></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between text-center">
+                            <div class="col-3">
+                                00000002
+                            </div>
+                            <div class="col-3">
+                                Entregue
+                            </div>
+                            <div class="col-3">
+                                R$ 34,99
+                            </div>
+                            <div class="col-3">
+                                <div class="">
+                                    <a class="link text-center" href="pedido.html"><u>Detalhes</u></a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>  
+        </div>
+    </body>
+    <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/popper.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxS/fFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html> 
