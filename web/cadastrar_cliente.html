@@ -35,9 +35,9 @@
             </div>
         </nav>
         <div class="painel cadastro">
-            <div class="container">
+            
                 <h3>Cadastro de clientes</h3>
-                <form class="margin-top-lg">
+                
                     <p class="secao margin-top-m">Dados de Acesso</p>
                     <div class="row">
                         <div class="form-group col-12">
@@ -92,6 +92,75 @@
                         </div>
                     </div>
                     
+                    <p class="secao margin-top-lg">Endereco Residencial</p>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="">Tipo Endereço</label>
+                            <select class="form-control" name="er_tipo_endereço">
+                                <option value=""></option>
+                                <option value="Residencial">Casa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-8">
+                            <label for="">CEP</label>
+                            <input type="text" class="form-control" name="er_cep" placeholder="Sem traços ou pontos">
+                        </div>
+                        <div class="col-4">
+                            <a class="form_link form-control" href="#">Não sei meu CEP</a>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                         <div class="form-group col-6">
+                            <label for="">Tipo Logradouro</label>
+                            <select name="er_tipoLogradouro" class="form-control">
+                                <option value="">Selecione</option>
+                                <option value="rua">Rua</option>
+                                <option value="viela">Viela</option>
+                                <option value="avenida">Avenida</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="">Logradouro</label>
+                            <input type="text" name="er_logradouro" placeholder="Logradouro" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-3">
+                            <label for="">Numero</label>
+                            <input type="text" name="er_numero" placeholder="Número" class="form-control">
+                        </div>
+                        <div class="form-group col-9">
+                            <label for="">Bairro</label>
+                            <input type="text" name="er_bairro" placeholder="Bairro" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                         
+                        <div class="form-group col-6">
+                            <label for="">Cidade</label>
+                            <input type="text" name="er_cidade" placeholder="Cidade" class="form-control">
+                        </div>
+                        <div class="form-group col-2">
+                            <label for="">UF</label>
+                            <select name="er_uf" class="form-control">
+                                <option value="">--</option>
+                                <option value="SP">SP</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="">País</label>
+                            <input type="text" name="er_pais" placeholder="Pais" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="observacoes">Observações</label>
+                            <textarea class="form-control" name="er_observacoes" id="observaoes" rows="2" placeholder="Opcional"></textarea>
+                        </div>
+                    </div>
                     <p class="secao margin-top-lg">Endereco de cobrança</p>
                     <div class="row">
                         <div class="form-group col-12">
@@ -240,8 +309,8 @@
                     <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-success col-6">Cadastrar</button>
                     </div>
-                </form>
-            </div>
+                
+            
         </div>
     </body>
     <script src="js/jquery.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
